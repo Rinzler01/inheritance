@@ -1,6 +1,6 @@
 package aggregates;
 
-public class AAA 
+public class AAA implements IAAA
 {
 	private int x = 7;
 	

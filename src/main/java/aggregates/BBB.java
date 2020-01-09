@@ -2,7 +2,15 @@ package aggregates;
 
 public class BBB 
 {
-	private AAA parent = new AAA();
+	private IAAA parent;
+	
+	public BBB(IAAA theParent)
+	{
+		parent = theParent;
+		
+	}
+	
+	
 	public int fooBar()
 	{
 		parent.fooBar();
@@ -15,5 +23,11 @@ public class BBB
 	{
 		System.out.println("Shouldn't be here");
 		
+	}
+	
+	private void F2()
+	{
+		System.out.println("AAA::in F2()");
+				
 	}
 }
