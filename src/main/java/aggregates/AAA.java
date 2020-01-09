@@ -1,6 +1,6 @@
 package aggregates;
 
-public abstract class AAA 
+public class AAA 
 {
 	private int x = 7;
 	
@@ -20,7 +20,7 @@ public abstract class AAA
 	
 	public void F1()
 	{
-		throw new UnsupportedOperationExceptoin("Not Supported Yet.");
+		System.out.println("Shouldn't be here");
 		
 	}
 	
